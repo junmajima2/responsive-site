@@ -100,6 +100,7 @@ section h2 {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
   width: 32%;
   padding: 20px;
   background-color: #fdfcf6;
