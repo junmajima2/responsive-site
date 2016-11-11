@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {font-size: 62.5%;}
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #125C8B;
+  /*background-color: #1B8ED7;*/
+}
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+a:visited {color: #0f949b;}
+a:hover {color: #0f949b;}
+a:active {color: #16d6e0;}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.block-center,
+section .container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.block-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+section {
+  padding: 60px 0;
+}
+section .container {
+  width: 90%;
+}
+section h2 {
+  font-size: 3.2rem;
+}
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #middle h3, #bottom h2 {
+  font-family: 'Abel', sans-serif;
+}
+
+.uppercase, section h2, #middle h3, #bottom h2 {
+  text-transform: uppercase;
+}
+
+/* Box
+------------------------------------------------------------*/
+.box {
+  background-image: url("../images/sample_Lesson7_2020.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Middle
+------------------------------------------------------------*/
+#middle {
+  background-color: #1B8ED7;
+  /*background-color: #125C8B;*/
+}
+#middle .container {
+  display: -webkit-flex;
+  display:         flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#middle h2 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  margin-bottom: 60px;
+  color: #fdfcf6;
+}
+#middle .middle-box {
+  word-wrap:break-word;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 32%;
+  padding: 20px;
+  background-color: #fdfcf6;
+}
+#middle h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+    
+  margin-bottom: 10px;
+  color: #125C8B;
+  background-color: #eee;
+}
+
+/* Bottom
+------------------------------------------------------------*/
+#bottom {
+  text-align: center;
+  height:270px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#bottom .btn-submit {
+  font-size: 1.8rem;
+  text-align: center;
+  vertical-align: top;
+  border: 5px solid #EEE;
+  padding: 10px 60px;
+  border-radius:8px 8px 8px 8px;
+  background-color: #eee;
+}
+#bottom .btn-submit:active {
+  background-color: #fdfcf6;
+  box-shadow: 0 3px 0 rgba(136,136,136,1);
+}
+#bottom h2 {
+  color: #fdfcf6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .box {
+    height: 250px;
+  }
+
+  #middle .container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #middle .middle-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fdfcf6;
+  }
+
+  #bottom .btn-submit:active {
+    background-color: #eee;
+　  box-shadow: 0 3px 0 rgba(136,136,136,1);
+  }
+
+}
